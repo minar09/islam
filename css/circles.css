@@ -1,0 +1,104 @@
+.left-box,
+.right-box {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.left-box {
+  margin-right: 50px;
+}
+
+.middle-box {
+  margin: auto;
+  width: 40%;
+}
+
+.right-box .circle + .circle {
+  margin-top: 20px;
+}
+
+.circle {
+  border-radius: 100%;
+  background: #ed1c24;
+  text-align: center;
+  position: relative;
+  display: table;
+  height: 90px;
+  z-index: 10;
+  color: #fff;
+  width: 90px;
+}
+
+.big-circle {
+  background: #52883b;
+  height: 150px;
+  width: 150px;
+}
+
+.purple {
+  background: #ec008c;
+}
+
+.green {
+  background: #26C281;
+}
+
+.yellow {
+  background: #E87E04;
+}
+
+.orange {
+  background: #ad4c10;
+}
+
+.blue {
+  background: #3598DC;
+}
+
+.gray {
+  background: #555555;
+}
+
+
+.circle .circle-content {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.circle.one:before,
+.circle.two:before,
+.circle.three:before,
+.circle.four:before,
+.circle.five:before,
+.circle.six:before {
+  transform: rotate(-20deg);
+  position: absolute;
+  margin: 0 -5px 0 0;
+  background: #000;
+  width: 74px;
+  content: '';
+  height: 1px;
+  right: 100%;
+  z-index: -1;
+  top: 50%;
+}
+
+.circle.two:before {
+  transform: rotate(20deg);
+}
+
+.circle.three:before {
+  transform: rotate(40deg);
+}
+
+.circle.four:before {
+  transform: rotate(60deg);
+}
+
+.circle.five:before {
+  transform: rotate(80deg);
+}
+
+.circle.six:before {
+  transform: rotate(100deg);
+}

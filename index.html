@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:Bolds" rel="stylesheet">
     
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/tooltip.css" rel="stylesheet">
+	<link href="css/circles.css" rel="stylesheet">
 	
     <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
@@ -37,6 +39,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>Islam</title>
+	
 
 
 </head>
@@ -88,7 +91,7 @@
 							
 								<div class="info">
 								
-									<div tabindex="0">
+									<div tabindex="0" data-tooltip="Islam means surrender or submission. A Muslim is the one who surrender oneself completely to the Will of God.">
 									
 										<h2>Islam</h2>
 										<p>There is no God except Allah (SWT) and Muhammad (PBUH) is the Messenger from Allah (SWT)</p>
@@ -103,7 +106,7 @@
 									
 										<div class="btn-wrap">
 											
-											<a class="btn btn-default" href="">Beliefs in Islam</a>
+											<a class="btn btn-default" onclick="openModal(document.getElementById('beliefsmodal'));">Beliefs in Islam</a>
 											
 										</div>
 										
@@ -113,7 +116,7 @@
 									
 										<div class="btn-wrap">
 										
-											<a class="btn btn-default" href="">Purpose of Human</a>
+											<a class="btn btn-default" onclick="openModal(document.getElementById('purposemodal'));">Purpose of Human</a>
 											
 										</div>
 
@@ -123,7 +126,7 @@
 									
 										<div class="btn-wrap">
 											
-											<a class="btn btn-default" href="">Pillars of Islam</a>
+											<a class="btn btn-default" onclick="openModal(document.getElementById('pillarsmodal'));">Pillars of Islam</a>
 											
 										</div>
 										
@@ -146,9 +149,91 @@
 		</div>
 		
 	</div>
-
+	
+	
+	<div id="beliefsmodal" class="modal" aria-hidden="true">
+		<div class="modal_box">
+		  <h2>Beliefs in Islam</h2>
+			
+			
+			<div class="left-box">
+			    <div class="big-circle circle">
+				    <div class="circle-content">Beliefs in Islam</div>
+			    </div>
+			</div>
+			
+			<div class="right-box">
+				<div class="circle one">
+					<div class="circle-content">God</div>
+				</div>
+				<div class="circle purple two">
+					<div class="circle-content">Angels</div>
+				</div>
+				<div class="circle yellow three">
+					<div class="circle-content">Prophets</div>
+				</div>
+				<div class="circle green four">
+					<div class="circle-content">Holy Books</div>
+				</div>
+				<div class="circle blue five">
+					<div class="circle-content">Judgement Day</div>
+				</div>
+				<div class="circle orange six">
+					<div class="circle-content">Predestination</div>
+				</div>
+			</div>
+		  
+		</div>
+	</div>
+	
+	<div id="purposemodal" class="modal" aria-hidden="true">
+		<div class="modal_box">
+		  <h2>Purpose of Human</h2>
+		  
+			<div class="middle-box">
+			    <div class="big-circle circle">
+				    <div class="circle-content">Only to worship Allah (SWT)</div>
+			    </div>
+			</div>
+		  
+		</div>
+	</div>
+	
+	<div id="pillarsmodal" class="modal" aria-hidden="true">
+		<div class="modal_box">
+		  <h2>Pillars of Islam</h2>
+			
+			<div class="left-box">
+			    <div class="big-circle circle">
+				    <div class="circle-content">Pillars of Islam</div>
+			    </div>
+			</div>
+			
+			<div class="right-box">
+				<div class="circle one">
+					<div class="circle-content">Declaration</div>
+				</div>
+				<div class="circle purple two">
+					<div class="circle-content">Prayer</div>
+				</div>
+				<div class="circle yellow three">
+					<div class="circle-content">Alms</div>
+				</div>
+				<div class="circle green four">
+					<div class="circle-content">Fasting</div>
+				</div>
+				<div class="circle blue five">
+					<div class="circle-content">Pilgrimage</div>
+				</div>
+			</div>
+		  
+		</div>
+	</div>
+	
 
 	<script src="js/script.js"></script>
+	<script src="js/fusilli.min.js"></script>
+	<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 	
 </body>
 

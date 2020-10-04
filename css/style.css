@@ -40,6 +40,7 @@ ul {
 }
 
 a.btn {
+	cursor: pointer;
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -2622,79 +2623,8 @@ h2.title {
     line-height: 30px;
     margin-bottom: 30px;
 }
-.container-int .nasa-history {
-    height: 618px;
-    background: no-repeat 0 0 #000;
-    background-size: cover;
-    color: #fff;
-    clear: both;
-    width: 100%;
-    position: relative;
-    z-index: 10;
-    padding: 150px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-@media (max-width: 960px) {
-    .container-int .nasa-history {
-        height: 450px;
-        padding: 75px;
-    }
-}
-@media (max-width: 768px) {
-    .container-int .nasa-history {
-        padding: 50px;
-        height: 420px;
-    }
-}
-@media (max-width: 640px) {
-    .container-int .nasa-history {
-        background-position: 50%;
-        padding: 20px;
-    }
-}
-.container-int .nasa-history > div:first-child {
-    max-width: 780px;
-}
-.container-int .nasa-history h2 {
-    text-transform: uppercase;
-    font-size: 64px;
-    color: hsla(0, 0%, 100%, 0.98);
-    letter-spacing: 0.21px;
-    margin: 0 0 15px;
-    font-weight: 100;
-}
-@media (max-width: 960px) {
-    .container-int .nasa-history h2 {
-        font-size: 50px;
-    }
-}
-@media (max-width: 640px) {
-    .container-int .nasa-history h2 {
-        font-size: 38px;
-    }
-}
-.container-int .nasa-history h4 {
-    text-transform: uppercase;
-    font-size: 24px;
-    color: hsla(0, 0%, 100%, 0.45);
-    margin-bottom: 5px;
-    font-weight: 100;
-}
-@media (max-width: 960px) {
-    .container-int .nasa-history h4 {
-        font-size: 18px;
-        margin: 12px 0;
-    }
-}
-.container-int .nasa-history p {
-    color: hsla(0, 0%, 100%, 0.98);
-    letter-spacing: 0.47px;
-    line-height: 30px;
-    margin-top: 5px;
-}
+
+
 .container-int .featured-spinoff {
     display: flex;
     width: 100%;
@@ -3628,22 +3558,8 @@ h2.title {
 .content-page-dialog .menu-control > a {
     position: fixed;
 }
-.nasa-log-25d {
-    background: url(../images/logo512.png) no-repeat;
-    background-size: cover;
-}
-.pillar-belief-loading {
-    height: 100%;
-    background-size: cover;
-}
-.pillar-belief-loading .nasa-intro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    flex-flow: column;
-}
+
+
 .header,
 .ui-w3d-menu-wrap {
     max-width: 1440px;
@@ -3707,11 +3623,4 @@ h2.title {
 .video-wrap img.thumbnail {
     width: 100%;
 }
-.nasa-facility-center .modal-controls a {
-    display: flex;
-    align-items: center;
-    color: #000;
-}
-.nasa-facility-center .modal-controls a .icon-btn {
-    margin-right: 5px;
-}
+
